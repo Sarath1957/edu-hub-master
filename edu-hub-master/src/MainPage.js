@@ -1,6 +1,12 @@
 import React from 'react';
 import Header from './Header';
 import Footer from './Footer';
+import myimg from "./img/new.png";
+import myimg1 from "./assets/img/team/aswanth.png";
+import myimg2 from "./assets/img/team/sarath.png";
+import myimg3 from "./assets/img/team/images1.png";
+import myimg4 from "./assets/img/team/jithin.png";
+
 
 import './style.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -59,7 +65,7 @@ const MainPage = () => {
               </div>
             </div>
             <div className="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
-              <img src="/img/hero-img.png" className="img-fluid animated" alt="" />
+              <img src={myimg} className="img-fluid animated" alt="" />
             </div>
           </div>
         </div>
@@ -75,7 +81,8 @@ const MainPage = () => {
             <div className="row content">
               <div className="col">
                 <p>
-                 
+                Welcome to Edu-Hub, a pioneering platform dedicated to revolutionizing the way we approach higher education. Our story begins with a simple yet powerful mission: to empower students, faculties, and educational stakeholders with comprehensive, data-driven insights that facilitate informed decision-making.
+At Edu-Hub, we believe that education is a transformative journey, and everyone deserves access to the right information to make the best decisions along the way. Our mission is to streamline this journey by providing a one-stop solution for all educational information needs, making the decision-making process simpler and more effective.
                 </p>
                 <a href="#" className="btn-learn-more">Learn More</a>
               </div>
@@ -107,7 +114,7 @@ const MainPage = () => {
           <TeamMember
             name="Aswanth k"
             role="Leader"
-            image="./assets/img/team/aswanth.png"
+            image={myimg1}
             socialLinks={[
               { icon: "twitter-fill", url: "#" },
               { icon: "facebook-fill", url: "#" },
@@ -118,7 +125,7 @@ const MainPage = () => {
           <TeamMember
             name="Sarath Krishna P S"
             role=""
-            image="assets/img/team/sarath.png"
+            image={myimg2}
             socialLinks={[
               { icon: "twitter-fill", url: "#" },
               { icon: "facebook-fill", url: "#" },
@@ -129,7 +136,7 @@ const MainPage = () => {
           <TeamMember
             name="Niby Vijayan"
             role=""
-            image="assets/img/team/images1.png"
+            image={myimg3}
             socialLinks={[
               { icon: "twitter-fill", url: "#" },
               { icon: "facebook-fill", url: "#" },
@@ -140,7 +147,7 @@ const MainPage = () => {
           <TeamMember
             name="Jithin Shaji"
             role=""
-            image="assets/img/team/jithin.png"
+            image={myimg4}
             socialLinks={[
               { icon: "twitter-fill", url: "#" },
               { icon: "facebook-fill", url: "#" },
